@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Buff Central - Eternal Sunshine of the Spotless Mind</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Movie Buff Central</h1>
+    <h2>Eternal Sunshine of the Spotless Mind</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bio">Character Bios</a></li>
+        <li><a href="#trailer">Trailer</a></li>
+        <li><a href="#quote">Quote of the Day</a></li>
+        <li><a href="#trivia">Trivia Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h3>Welcome to the Fan Page!</h3>
+    <p>Eternal Sunshine of the Spotless Mind is a thought-provoking film that explores the complexities of love and memory. Join us as we delve into the characters, themes, and unforgettable moments of this cinematic masterpiece.</p>
+    <img src="https://www.bing.com/images/search?view=detailV2&id=A45D790AD52A3F41C1DB00B582C3BEF2D9734338&thid=OIP.s_b1uRARdfpmiOR4G-_ejgHaK3&mediaurl=https%3a%2f%2fimages.fandango.com%2fImageRenderer%2f820%2f0%2fredesign%2fstatic%2fimg%2fdefault_poster.png%2f0%2fimages%2fmasterrepository%2ffandango%2f174845%2fEternal+Sunshine+of+the+Spotless+Mind.jpg&exph=1204&expw=820&q=eternal+sunshine+of+a+spotless+mind+poster&simid=607996524805423409&ck=E6996C7340D10C9F555CDF9483190857&itb=0&FORM=IVCLIG" alt="Eternal Sunshine of the Spotless Mind Poster">
+  </section>
+
+  <section id="bio">
+    <h3>Character Bio: Joel Barish</h3>
+    <p>Joel Barish is a quiet, introspective man whose cautious and reserved nature is contrasted by his impulsive decision to undergo the memory erasure procedure after discovering his ex-girlfriend, Clementine, has erased him from her mind. Over the course of the film, we follow Joel’s internal journey as he relives memories of his relationship, grappling with the pain, beauty, and regret that come with lost love. As he tries to hold on to the memories of Clementine, Joel’s character reveals a deep longing for connection and the struggle to let go of someone who profoundly impacted his life.</p>
+    <p><strong>Portrayed by:</strong> Jim Carrey</p>
+    <p><strong>Key Traits:</strong> Quiet, introspective, emotionally conflicted</p>
+    <p><strong>Memorable Moment:</strong> "I can't see anything that I don't like about you." – A line that encapsulates his deep love for Clementine, despite their tumultuous relationship.</p>
+  </section>
+
+  <section id="trailer">
+    <h3>Movie Trailer</h3>
+    <iframe width="560" height="315" src="https://youtu.be/07-QBnEkgXU?si=S8kdSga-46aXIbcy" title="Eternal Sunshine of the Spotless Mind Trailer" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="quote">
+    <h3>Quote of the Day</h3>
+    <p id="quoteText">"I can't see anything that I don't like about you."</p>
+    <button onclick="newQuote()">Get Another Quote</button>
+  </section>
+
+  <section id="trivia">
+    <h3>Trivia Quiz</h3>
+    <form>
+      <label for="question1">1. What procedure do Joel and Clementine undergo?</label>
+      <input type="text" id="question1" name="question1" required>
+      <br>
+      <label for="question2">2. Who is the doctor that performs the memory erasure?</label>
+      <input type="text" id="question2" name="question2" required>
+      <br>
+      <button type="submit">Submit Answers</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Movie Buff Central</p>
+  </footer>
+
+  <script>
+    function newQuote() {
+      const quotes = [
+        "I can't see anything that I don't like about you.",
+        "I remember that speech really well.",
+        "What’s the point of all this?",
+        "You can erase someone from your mind. Getting them out of your heart is another story."
+      ];
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quoteText').innerText = quotes[randomIndex];
+    }
+  </script>
+</body>
+</html>
